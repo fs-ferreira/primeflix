@@ -7,7 +7,7 @@ import MyMovies from "./pages/MyMovies";
 
 function RoutesApp() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="primeflix">
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
