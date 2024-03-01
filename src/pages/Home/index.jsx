@@ -13,10 +13,11 @@ function Home() {
       const response = await api.get('movie/now_playing', {
         params: {
           api_key: 'ec03db76262c9408b4020a4a6b7965c2',
-          language: 'pt-br'
+          language: 'pt-br',
+          region: 'BR'
         }
       })
-      setMovies(response.data.results.slice(0, 10))
+      setMovies(response.data.results.slice(0, 12))
       setLoading(false)
     }
 
@@ -33,7 +34,7 @@ function Home() {
 
   return (
     <div className="max-w-6xl mx-auto p-2 sm:p-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md-grid gap-10">
         {movies.map(movie => {
           return (
             <Link
