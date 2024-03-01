@@ -1,8 +1,35 @@
-# React + Vite
+# Primeflix - Listagem de filmes em cartaz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido para praticar os hooks básicos do React, useState e useEffect.
 
-Currently, two official plugins are available:
+Feito com Vite, Axios, sonner e tailwind.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Code
+Este projeto tem seu MVP publicado no gh-pages. Acesse em [Primeflix](https://fs-ferreira.github.io/primeflix)
+
+## Como rodar localmente a aplicação
+
+1. Clone o repositório
+
+    ```bash
+    git clone https://github.com/fs-ferreira/primeflix.git
+    ````
+2. Acesse o projeto
+
+    ```bash
+    cd primeflix
+    ````
+3. Instale as dependências
+
+    ```bash
+    npm install
+    ````
+4. Execute o projeto
+
+    ```bash
+    npm run dev
+    ````
+
+## Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir sugerir melhorias e apontar possíveis issues no projeto.
+

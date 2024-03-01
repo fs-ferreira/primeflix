@@ -36,9 +36,10 @@ function Home() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
         {movies.map(movie => {
           return (
-            <article
+            <Link
               key={movie.id}
-              className="flex flex-col items-center text-center shadow-zinc-950 shadow-lg"
+              to={`/movie/${movie.id}`}
+              className="flex flex-col items-center text-center shadow-zinc-950 shadow-lg hover:scale-105 transition-all"
             >
               {/* <strong className="text-2xl mb-3">{movie.title.toUpperCase()}</strong> */}
               <img 
@@ -46,15 +47,14 @@ function Home() {
               alt={movie.title}
               className="w-full h-full rounded-t-md"
               />
-              <Link
-                to={`/movie/${movie.id}`}
+              <button
                 className="ring-zinc-200 ring-offset-1 w-full
                 bg-zinc-800 p-4 font-semibold text-lg transition-all
                 hover:ring-2 hover:rounded-md hover:scale-105 hover:bg-zinc-700"
               >
                 Saiba mais
-              </Link>
-            </article>
+              </button>
+            </Link>
           )
         })}
       </div>
